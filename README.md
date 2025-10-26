@@ -4,7 +4,7 @@ A powerful C implementation of an Arbitrary Precision Calculator that performs a
 
 ## Overview
 
-Arbitrary Precision Calculator (APC) enables you to perform addition, subtraction, multiplication, and division on numbers of virtually unlimited size. The program uses doubly linked lists to store numbers digit by digit, allowing calculations that would otherwise cause integer overflow in traditional implementations.
+APC (Arbitrary Precision Calculator) enables you to perform addition, subtraction, multiplication, and division on numbers of virtually unlimited size. The program uses doubly linked lists to store numbers digit by digit, allowing calculations that would otherwise cause integer overflow in traditional implementations.
 
 ## Features
 
@@ -49,82 +49,82 @@ Each large number is stored as a doubly linked list where:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/BigNumCalc.git
-cd BigNumCalc
+git clone https://github.com/SLADE0261/Arbitrary-Precision-Calculator-APC-.git
+cd Arbitrary-Precision-Calculator-APC-
 ```
 
 2. Compile the project:
 ```bash
-gcc main.c addition.c subtraction.c multiplication.c division.c -o bignumcalc
+gcc main.c addition.c subtraction.c multiplication.c division.c -o apc
 ```
 
 Or compile individual files:
 ```bash
 gcc -c main.c addition.c subtraction.c multiplication.c division.c
-gcc main.o addition.o subtraction.o multiplication.o division.o -o bignumcalc
+gcc main.o addition.o subtraction.o multiplication.o division.o -o apc
 ```
 
 ## Usage
 
 ### General Syntax
 ```bash
-./bignumcalc <number1> <operator> <number2>
+./apc <number1> <operator> <number2>
 ```
 
 ### Operations
 
 #### Addition
 ```bash
-./bignumcalc 12345678901234567890 + 98765432109876543210
+./apc 12345678901234567890 + 98765432109876543210
 # Output: 111111111011111111100
 
-./bignumcalc -500 + 300
+./apc -500 + 300
 # Output: -200
 
-./bignumcalc 999999999999999999 + 1
+./apc 999999999999999999 + 1
 # Output: 1000000000000000000
 ```
 
 #### Subtraction
 ```bash
-./bignumcalc 1000000000000000000 - 1
+./apc 1000000000000000000 - 1
 # Output: 999999999999999999
 
-./bignumcalc 100 - 250
+./apc 100 - 250
 # Output: -150
 
-./bignumcalc -50 - -30
+./apc -50 - -30
 # Output: -20
 ```
 
 #### Multiplication
 ```bash
-./bignumcalc 123456789 * 987654321
+./apc 123456789 * 987654321
 # Output: 121932631112635269
 
-./bignumcalc -25 * 4
+./apc -25 * 4
 # Output: -100
 
-./bignumcalc 999999999 * 999999999
+./apc 999999999 * 999999999
 # Output: 999999998000000001
 ```
 
 #### Division
 ```bash
-./bignumcalc 1000000000000 / 123456789
+./apc 1000000000000 / 123456789
 # Output: 8100 (quotient only)
 
-./bignumcalc 100 / 3
+./apc 100 / 3
 # Output: 33
 
-./bignumcalc -100 / 5
+./apc -100 / 5
 # Output: -20
 ```
 
 ## Project Structure
 
 ```
-BigNumCalc/
+Arbitrary-Precision-Calculator-APC-/
 ├── main.c              # Main program entry point and utility functions
 ├── addition.c          # Addition implementation
 ├── subtraction.c       # Subtraction implementation
