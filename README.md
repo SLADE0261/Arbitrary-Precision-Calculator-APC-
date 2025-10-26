@@ -1,10 +1,10 @@
-# Arbitrary Precision Calculator (APC)
+# Arbitrary-Precision-Calculator-APC
 
 A powerful C implementation of an Arbitrary Precision Calculator that performs arithmetic operations on extremely large numbers beyond the limits of standard integer data types.
 
 ## Overview
 
-APC (Arbitrary Precision Calculator) enables you to perform addition, subtraction, multiplication, and division on numbers of virtually unlimited size. The program uses doubly linked lists to store numbers digit by digit, allowing calculations that would otherwise cause integer overflow in traditional implementations.
+Arbitrary-Precision-Calculator-APC enables you to perform addition, subtraction, multiplication, and division on numbers of virtually unlimited size. The program uses doubly linked lists to store numbers digit by digit, allowing calculations that would otherwise cause integer overflow in traditional implementations.
 
 ## Features
 
@@ -178,22 +178,22 @@ The calculator implements comprehensive sign handling:
 
 ```bash
 # Compile the program
-gcc main.c addition.c subtraction.c multiplication.c division.c -o bignumcalc
+gcc main.c addition.c subtraction.c multiplication.c division.c -o apc
 
 # Test with small numbers
-./bignumcalc 25 + 75
+./apc 25 + 75
 # Output: 100
 
 # Test with very large numbers
-./bignumcalc 123456789012345678901234567890 * 987654321098765432109876543210
+./apc 123456789012345678901234567890 * 987654321098765432109876543210
 # Output: (very large result)
 
 # Test with negative numbers
-./bignumcalc -1000 - -500
+./apc -1000 - -500
 # Output: -500
 
 # Test division
-./bignumcalc 999999999 / 7
+./apc 999999999 / 7
 # Output: 142857142
 ```
 
@@ -201,7 +201,7 @@ gcc main.c addition.c subtraction.c multiplication.c division.c -o bignumcalc
 
 | Error | Meaning | Solution |
 |-------|---------|----------|
-| Invalid Input | Wrong number of arguments | Use format: `./bignumcalc num1 op num2` |
+| Invalid Input | Wrong number of arguments | Use format: `./apc num1 op num2` |
 | Invalid Input | Non-digit characters | Use only digits, '+', or '-' |
 | Division by zero | Divisor is zero | Use non-zero divisor |
 | Memory allocation failed | Insufficient memory | Close other programs |
@@ -236,14 +236,11 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available for educational purposes.
 
 ## Author
 
-**Krishnakant C. Pore**
-- Project Date: July 7, 2025
-- Email: [your-email@example.com]
-- GitHub: [@yourusername]
+Krishnakant C. Pore
 
 ## Acknowledgments
 
@@ -251,25 +248,29 @@ This project is open source and available under the [MIT License](LICENSE).
 - Elementary arithmetic algorithms
 - C programming community
 
+## Repository
+
+GitHub: [https://github.com/SLADE0261/Arbitrary-Precision-Calculator-APC-](https://github.com/SLADE0261/Arbitrary-Precision-Calculator-APC-)
+
 ## Testing
 
 ### Test Cases Included
 
 ```bash
 # Basic Operations
-./bignumcalc 123 + 456                    # Expected: 579
-./bignumcalc 1000 - 1                     # Expected: 999
-./bignumcalc 25 * 4                       # Expected: 100
-./bignumcalc 100 / 5                      # Expected: 20
+./apc 123 + 456                    # Expected: 579
+./apc 1000 - 1                     # Expected: 999
+./apc 25 * 4                       # Expected: 100
+./apc 100 / 5                      # Expected: 20
 
 # Large Numbers
-./bignumcalc 999999999999 + 1             # Expected: 1000000000000
-./bignumcalc 123456789012345 * 9          # Expected: 1111111101111105
+./apc 999999999999 + 1             # Expected: 1000000000000
+./apc 123456789012345 * 9          # Expected: 1111111101111105
 
 # Negative Numbers
-./bignumcalc -50 + -50                    # Expected: -100
-./bignumcalc -100 * -5                    # Expected: 500
-./bignumcalc 100 - 200                    # Expected: -100
+./apc -50 + -50                    # Expected: -100
+./apc -100 * -5                    # Expected: 500
+./apc 100 - 200                    # Expected: -100
 ```
 
 ## FAQ
@@ -288,4 +289,4 @@ A: No, this is significantly slower. Use this only when numbers exceed standard 
 
 ---
 
-**⭐ If you find this project useful, please consider giving it a star!**
+**★ If you find this project useful, please consider giving it a star!**
